@@ -3,10 +3,10 @@
 
 # 对数组中所用元素求和
 def sumArray(num):
-    if len(num) == 0:
-        return 0
-    else:
+    if num:
         return num.pop() + sumArray(num)
+    else:
+        return 0
 
 
 print(sumArray([1, 2, 3, 4, 5, 6]))
