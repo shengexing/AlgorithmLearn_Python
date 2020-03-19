@@ -11,7 +11,7 @@ def binary_search(list, item):
         guess = list[mid]
         if guess == item:  # 找到了元素
             return mid
-        if guess > item:  # 猜的数字大了
+        elif guess > item:  # 猜的数字大了
             high = mid - 1
         else:  # 猜的数字小了
             low = mid + 1
