@@ -10,9 +10,9 @@ def quickSort(array):
     else:
         index = random.randint(0, len(array) - 1)
         return quickSort(
-            [i for i in array[0:index] + array[index + 1:] if i < array[index]]
+            [i for i in array[0:index] + array[index+1:] if i < array[index]]
         ) + [array[index]] + quickSort(
-            [i for i in array[0:index] + array[index + 1:] if i >= array[index]]
+            [i for i in array[0:index] + array[index+1:] if i >= array[index]]
         )
 
 
